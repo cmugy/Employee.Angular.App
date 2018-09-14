@@ -1,8 +1,5 @@
-<div class='employee'>
-
-</div>
 <div class='employee-table'>
-    <table class='table'>
+    <table >
         <thead>
             <tr>
                 <th>Id</th>
@@ -12,8 +9,12 @@
                 <th>Start Date</th>
             </tr>
         </thead>
-        <tbody>
-
+        <tbody *ngFor="let employee of employees" class='table'>
+            <tr>{{employee.id}}</tr>
+            <tr>{{employee.firstName}}</tr>
+            <tr>{{employee.firstName}}</tr>
+            <tr>{{employee.salary}}</tr>
+            <tr>{{employee.startDate}}</tr>
         </tbody>
     </table>
 </div>

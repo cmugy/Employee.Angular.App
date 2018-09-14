@@ -2,8 +2,9 @@ import {HttpClient} from '@angular/common/http';
 import {Employee} from '../models/employee,model';
 import { Observable } from 'rxjs';
 import {publishReplay, refCount} from 'rxjs/operators';
+import {Injectable} from '@angular/core';
 
-
+@Injectable()
 export class EmployeeService {
    client: HttpClient;
    url = 'http://employeewebapiazure20180822105822.azurewebsites.net/api/employees';

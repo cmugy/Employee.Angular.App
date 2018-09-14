@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import {EmployeeListComponent} from './employees/employee-list.component';
+import {EmployeeService} from './employees/providers/EmployeeService';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import {EmployeeListComponent} from './employees/employee-list.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [EmployeeService],
+  bootstrap: [AppComponent, EmployeeListComponent]
 })
 export class AppModule { }
